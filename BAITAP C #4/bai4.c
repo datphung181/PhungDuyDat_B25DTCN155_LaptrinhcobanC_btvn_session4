@@ -20,9 +20,12 @@ int main(){
 		case 11:
 			printf("%d la thang co 30 ngay",month);
 			break;
-		default:
+		case 2:
 			printf("%d la thang co 28 hoac 29 ngay",month);
+		default:
+			printf("%d la thang KHONG hop le",month);
 			break;
 	}
 	return 0;
 }
+
