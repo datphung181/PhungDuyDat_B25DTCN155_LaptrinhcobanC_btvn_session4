@@ -5,19 +5,10 @@ int main(){
 	printf("nhap thang can kiem tra:");
 	scanf("%d",&month);
 	switch(month){
-		case 1:
-		case 3:
-		case 5:
-		case 7:
-		case 8:
-		case 10:
-		case 12:
+		case 1,3,5,7,8,10,12:
 			printf("%d la thang co 31 ngay",month);
 			break;
-		case 4:
-		case 6:
-		case 9:
-		case 11:
+		case 4,6,9,11:
 			printf("%d la thang co 30 ngay",month);
 			break;
 		case 2:
@@ -28,4 +19,5 @@ int main(){
 	}
 	return 0;
 }
+
 
