@@ -1,19 +1,38 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-	int wat;
-	printf("nhap so dien tieu thu thang vua qua:");
-	scanf("%d",&wat);
-	if(wat>=0 && wat<50){
-		printf("thang vua qua co gia dien la: 10000vnd/kWh");
-	} else if (wat>=50 && wat<100){
-		printf("thang vua qua co gia dien la: 15000vnd/kWh");
-	} else if (wat>=100 && wat<150){
-		printf("thang vua qua co gia dien la: 20000vnd/kWh");
-	} else if (wat>=150 && wat<200){
-		printf("thang vua qua co gia dien la: 25000vnd/kWh");
-	} else{
-		printf("thang vua qua co gia dien la: 30000vnd/kWh");
+int main() {
+    int old1, new1, wat;
+
+    printf("Nhap chi so dien cu: ");
+    scanf("%d", &old1);
+
+    printf("Nhap chi so dien moi: ");
+    scanf("%d", &new1);
+
+    wat = old1 - new1;
+
+    if (wat < 0) {
+        printf("Chi so nhap KHONG hop le!\n");
+        return 0;
+    }
+    if (wat < 50) {
+        tien = wat * 10000;
 	}
-	return 0;
+    else if (wat < 100 && wat >=50){
+        tien = 50 * 10000 + (wat - 50) * 15000;
+	}
+    else if (wat < 150 && wat >= 100){
+        tien = 50 * 10000 + 50 * 15000 + (wat - 100) * 20000;
+	}
+    else if (wat < 200 && wat >= 150){
+        tien = 50 * 10000 + 50 * 15000 + 50 * 20000 + (wat - 150) * 25000;
+	}
+    else {
+        tien = 50 * 10000 + 50 * 15000 + 50 * 20000 + 50 * 25000 + (wat - 200) * 30000;
+	{
+
+    printf("so dien tieu thu: %.0lf kWh\n", soDien);
+    printf("TIEN DIEN LA... %.0lf VND\n", tien);
+
+    return 0;
 }
