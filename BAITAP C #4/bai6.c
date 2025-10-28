@@ -31,8 +31,9 @@ int main() {
         tien = 50 * 10000 + 50 * 15000 + 50 * 20000 + 50 * 25000 + (wat - 200) * 30000;
 	{
 
-    printf("so dien tieu thu: %.0lf kWh\n", soDien);
+    printf("so dien tieu thu: %.0lf kWh\n", wat);
     printf("TIEN DIEN LA... %.0lf VND\n", tien);
 
     return 0;
 }
+
